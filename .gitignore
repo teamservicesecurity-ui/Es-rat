@@ -1,0 +1,24 @@
+# Sensitive data
+/panel/data/*.json
+/panel/uploads/*
+/panel/logs/*
+/panel/temp/*
+/panel/vendor/
+
+# Environment
+.env
+.env.local
+*.key
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
