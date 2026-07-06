@@ -1,0 +1,94 @@
+{
+  "_comment": "C2-Empyrean - Panel configuration",
+  "_version": 1,
+
+  "panel": {
+    "name": "C2-Empyrean",
+    "version": "1.0.0",
+    "debug": false,
+    "timezone": "UTC"
+  },
+
+  "auth": {
+    "jwt_secret": "",
+    "token_expiry": 3600,
+    "refresh_expiry": 86400,
+    "max_login_attempts": 5,
+    "lockout_duration": 900,
+    "mfa_enabled": false,
+    "mfa_secret": ""
+  },
+
+  "heartbeat": {
+    "interval": 30,
+    "offline_threshold": 120,
+    "jitter_max": 5
+  },
+
+  "encryption": {
+    "algorithm": "aes-256-cbc",
+    "key": "",
+    "iv_length": 16
+  },
+
+  "rate_limits": {
+    "api_requests_per_minute": 60,
+    "commands_per_minute": 20,
+    "devices_per_page": 50,
+    "max_payload_size_mb": 50
+  },
+
+  "data_retention": {
+    "keylogs_days": 30,
+    "commands_days": 90,
+    "locations_days": 30,
+    "files_days": 14,
+    "notifications_days": 7,
+    "sms_days": 30,
+    "call_logs_days": 30
+  },
+
+  "telegram": {
+    "bot_token": "",
+    "chat_id": "",
+    "active": false,
+    "notifications": {
+      "new_device": true,
+      "device_offline": true,
+      "keylog_alert": false,
+      "sms_alert": false,
+      "location": false
+    },
+    "keywords": []
+  },
+
+  "exploits": {
+    "default_c2_url": "",
+    "qr_size": 512,
+    "sms_sender": "+1-555-0100"
+  },
+
+  "notifications": {
+    "sound_enabled": true,
+    "browser_notifications": false,
+    "desktop_notifications": false
+  },
+
+  "webhook": {
+    "enabled": false,
+    "url": "",
+    "secret": "",
+    "events": []
+  },
+
+  "ui": {
+    "theme": "dark",
+    "sidebar_collapsed": false,
+    "auto_refresh": true,
+    "refresh_interval": 10000,
+    "items_per_page": 50,
+    "map_default_zoom": 2,
+    "map_center_lat": 20,
+    "map_center_lng": 0
+  }
+}
